@@ -1,0 +1,168 @@
+/*
+Theme Name: Portfolio
+*/
+
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 見出し */
+header, 
+footer,
+h2 {
+    background-color: #ffe4e1;
+}
+
+#header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+/* My profile */
+h1 {
+    font-size: 27px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+nav > ul {
+    display: flex;
+    padding-right: 15px;
+    list-style: none;
+}
+
+nav li {
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.about-wapper ,
+.works-wapper ,
+footer {
+    text-align: center;
+}
+
+/* about・works 見出し */
+h2 {
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* 名前 */
+h3 {
+    font-size: 20px;
+}
+
+
+li, p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* about */
+.adout-contents {
+    padding: 4%;
+}
+
+.adout-contents > img {
+    margin:0 auto;
+    display: block;
+    width: 70%;
+}
+
+.name {
+    padding: 30px 20px;
+}
+
+/* works */
+.works-contents {
+    padding: 4%;
+}
+
+.works-item {
+    border: 1px solid rgb(238, 204, 204);
+    text-align: center;
+    padding: 30px;
+    margin: 1rem;
+    }
+
+
+
+/* PC用 */
+@media screen and (min-width: 768px) {
+    
+    /* My profile */
+    h1 {
+        font-size: 30px;
+        height: 50px;
+        padding-left: 30px;
+    }
+
+    /* about・works 見出し */
+    h2 {
+        font-size: 25px;
+    }
+
+    /* 名前 */
+    h3 {
+        font-size: 20px;
+    }
+
+    #header-logo {
+        padding: 20px;
+    }
+
+    .menu > ul {
+        padding-right: 40px;
+        font-size: 20px;
+    }
+
+    /* about */
+    .adout-contents {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .adout-contents > img {
+        margin: 0;
+        width: 30%;
+    }
+
+    .name {
+        padding: 40px;
+    }
+
+    /* works */
+    .works-contents {
+        display: flex;
+        padding: 10px 10px;
+    }
+   
+    .works-item img {
+        border: 1px solid #ccc;
+    }
+
+    .works-contents > img {
+        width: 100%;
+    }
+
+    .category-works main, .page-id-40 main {
+        max-width: 1340px;
+        margin: 0 auto;
+    }
+
+    .category-works h1 {
+        padding-left: 0;
+    }
+}
